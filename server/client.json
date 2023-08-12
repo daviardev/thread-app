@@ -1,0 +1,116 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "user_uuid": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94",
+            "name": "Jerson David Silva Arjona",
+            "username": "daviardev",
+            "bio": "Training Developer Web App, Game Developer, Mobile Developer",
+            "avatar": "https://avatars.githubusercontent.com/u/65743790?v=4",
+            "github_url": "https://github.com/daviardev",
+            "followers": [
+                {
+                    "user_uuid": "9883c310-dcff-493c-9be4-f991cce51b9d"
+                },
+                {
+                    "user_uuid": "2282d98c-a9a5-4452-b227-3dcb97900314"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "user_uuid": "2282d98c-a9a5-4452-b227-3dcb97900314",
+            "name": "Miguel Ángel Durán",
+            "username": "midudev",
+            "bio": "Te enseño Programación y Desarrollo Web. Creador de contenido en Twitch y YouTube.",
+            "avatar": "https://avatars.githubusercontent.com/u/1561955?v=4",
+            "github_url": "https://github.com/midudev",
+            "followers": [
+                {
+                    "user_uuid": "9883c310-dcff-493c-9be4-f991cce51b9d"
+                },
+                {
+                    "user_uuid": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "user_uuid": "9883c310-dcff-493c-9be4-f991cce51b9d",
+            "name": "Oscar Barajas Tavares",
+            "username": "gndx",
+            "bio": "Learning Engineer at Platzi - Microsoft MVP - Lead at Developer Circles from Meta - #JavaScript #React #Web3 #BTC #ETH - #Twitch Partner - mexico colombia.",
+            "avatar": "https://avatars.githubusercontent.com/u/10554486?v=4",
+            "github_url": "https://github.com/gndx",
+            "followers": [
+                {
+                    "user_uuid": "2282d98c-a9a5-4452-b227-3dcb97900314"
+                },
+                {
+                    "user_uuid": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94"
+                }
+            ]
+        }
+    ],
+    "threads": [
+        {
+            "id": 0,
+            "createdAt": "Sat Aug 12 2023 12:05:30 GMT-0500 (hora estándar de Colombia)",
+            "thread_from": "9883c310-dcff-493c-9be4-f991cce51b9d",
+            "thread_to": null,
+            "repply_to": 3,
+            "text": "señor Goku, que va hacerme, Ese culo me está poniendo insano",
+            "likes": [
+                {
+                    "uuid": "9883c310-dcff-493c-9be4-f991cce51b9d"
+                },
+                {
+                    "uuid": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "createdAt": "Sat Jun 8 2023 12:08:10 GMT-0500 (hora estándar de Colombia)",
+            "thread_from": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94",
+            "thread_to": null,
+            "repply_to": null,
+            "text": "Happening soon",
+            "likes": []
+        },
+        {
+            "id": 2,
+            "createdAt": "Sat Jun 12 2023 12:08:10 GMT-0500 (hora estándar de Colombia)",
+            "thread_from": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94",
+            "thread_to": null,
+            "repply_to": null,
+            "text": "Happy Hacking",
+            "likes": []
+        },
+        {
+            "id": 3,
+            "createdAt": "Sat Jun 9 2023 2:08:10 GMT-0500 (hora estándar de Colombia)",
+            "thread_from": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94",
+            "thread_to": null,
+            "repply_to": "2282d98c-a9a5-4452-b227-3dcb97900314",
+            "text": "Ella es el silencio de una oración",
+            "likes": []
+        },
+        {
+            "id": 4,
+            "createdAt": "Sat Jun 2 2023 1:08:10 GMT-0500 (hora estándar de Colombia)",
+            "thread_from": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94",
+            "thread_to": null,
+            "repply_to": null,
+            "text": "No, no la puedo olvidar",
+            "likes": [
+                {
+                    "uuid": "9883c310-dcff-493c-9be4-f991cce51b9d"
+                },
+                {
+                    "uuid": "a4b35845-9eb2-46e1-93ab-ab7c2ea2ca94"
+                }
+            ]
+        }
+    ]
+}
