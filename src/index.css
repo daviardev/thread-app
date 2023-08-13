@@ -6,8 +6,9 @@
 @tailwind components;
 
 :root {
-    --background: #101010;
-    --primary-text-color: #f3f5f7;
+    --background: #ffffff;
+    --primary-text-color: #000000;
+    --secondary-text-color: #999999;
 }
 
 * {
@@ -25,6 +26,12 @@ body {
     background-color: var(--background);
 
     -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+    --background: #101010;
+    --primary-text-color: #f3f5f7;
+    --secondary-text-color: #777777;
 }
 
 a {
