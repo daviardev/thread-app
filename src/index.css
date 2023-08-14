@@ -21,14 +21,9 @@
 
 body {
     color: var(--primary-text-color);
-    margin: 0;
-    height: auto;
-    display: flex;
     font-size: 15px;
     overflow-y: visible;
-    align-items: center;
     line-height: 21px;
-    justify-content: center;
     background-color: var(--background);
 
     -webkit-font-smoothing: antialiased;
@@ -93,6 +88,14 @@ svg {
     .screen {
         padding-left: 12px;
         padding-right: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .query {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 620px;
     }
 }
 

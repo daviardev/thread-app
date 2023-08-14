@@ -8,7 +8,7 @@ export default function App () {
   return (
     <>
       <ThemeProvider>
-        <main>
+        <main className='w-screen mr-auto flex-col flex grow ml-auto query'>
           <Header />
           <div>
             <UserInfo />
