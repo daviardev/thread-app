@@ -4,7 +4,7 @@ import Links from './Links'
 export default function UserInfo () {
   return (
     <>
-      <nav className='pt-4 pb-4 screen'>
+      <nav className='pt-4 pb-4'>
         <section className='container-info flex justify-between items-center'>
           <div className='col-[1]'>
             <h2 className='name-title' style={{ lineHeight: 'calc(1.30 * 1em)' }}>
@@ -25,7 +25,7 @@ export default function UserInfo () {
           </div>
           <div className='col-[2]'>
             <div className='content-image'>
-              <figure className='h-16 w-16'>
+              <figure className='h-16 w-16 md:w-[84px] md:h-[84px]'>
                 <img
                   height='100%'
                   width='100%'
