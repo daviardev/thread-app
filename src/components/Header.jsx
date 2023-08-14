@@ -7,7 +7,7 @@ export default function Header () {
 
   return (
     <>
-      <header className='flex justify-center items-center h-[74px] w-full'>
+      <header className='flex py-7 justify-center pt-[4.6rem] w-screen flex-col items-center'>
         <button className='w-[24px] h-[24px]' onClick={toggleTheme}>
           <span>
             <Logo />
