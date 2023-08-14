@@ -86,16 +86,10 @@ svg {
 
 @media (max-width: 767px) {
     .screen {
+        max-width: 520px;
+        box-sizing: border-box;
         padding-left: 12px;
         padding-right: 12px;
-    }
-}
-
-@media (min-width: 768px) {
-    .query {
-        padding-left: 24px;
-        padding-right: 24px;
-        max-width: 620px;
     }
 }
 
