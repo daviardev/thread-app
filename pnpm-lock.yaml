@@ -9,10 +9,10 @@ dependencies:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.27)
   json-server:
-    specifier: ^0.17.3
+    specifier: 0.17.3
     version: 0.17.3
   million:
-    specifier: ^2.5.12
+    specifier: 2.5.12
     version: 2.5.12
   postcss:
     specifier: 8.4.27
