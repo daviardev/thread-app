@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Modal from './components/Modal'
 import Options from './components/Options'
 import UserInfo from './components/UserInfo'
 
@@ -14,6 +15,7 @@ export default function App () {
             <UserInfo />
           </div>
           <Options />
+          <Modal />
         </main>
       </ThemeProvider>
     </>
