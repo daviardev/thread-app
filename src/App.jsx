@@ -13,9 +13,9 @@ export default function App () {
           <Header />
           <div>
             <UserInfo />
+            <Modal />
           </div>
           <Options />
-          <Modal />
         </main>
       </ThemeProvider>
     </>

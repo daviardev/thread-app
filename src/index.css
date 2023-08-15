@@ -7,6 +7,7 @@
 
 :root {
     --background: #ffffff;
+    --card-color: #ffffff;
     --thread-background: #f5f5f5;
     --primary-text-color: #000000;
     --secondary-text-color: #999999;
@@ -31,6 +32,7 @@ body {
 
 .dark body {
     --background: #101010;
+    --card-color: #181818;
     --thread-background: #1e1e1e;
     --primary-text-color: #f3f5f7;
     --secondary-text-color: #777777;
