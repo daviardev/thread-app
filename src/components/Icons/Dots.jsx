@@ -16,6 +16,7 @@ const Dots = props => (
       stroke='var(--primary-text-color)'
       strokeWidth={2}
     />
+    <title>Más</title>
     <path
       fillRule='evenodd'
       d='M7.5 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3ZM12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3ZM16.5 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z'
