@@ -1,5 +1,4 @@
 import Header from './components/Header'
-import Modal from './components/Modal'
 import Options from './components/Options'
 import UserInfo from './components/UserInfo'
 
@@ -11,10 +10,7 @@ export default function App () {
       <ThemeProvider>
         <main className='w-screen screen mr-auto flex-col flex grow ml-auto md:pl-3 md:pr-3 md:max-w-[620px]'>
           <Header />
-          <div>
-            <UserInfo />
-            <Modal />
-          </div>
+          <UserInfo />
           <Options />
         </main>
       </ThemeProvider>
