@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import InputPost from './components/InputPost'
 import Options from './components/Options'
 import Thread from './components/Thread'
 import UserInfo from './components/UserInfo'
@@ -14,6 +15,7 @@ export default function App () {
           <UserInfo />
           <Options />
           <Thread />
+          <InputPost />
         </main>
       </ThemeProvider>
     </>
