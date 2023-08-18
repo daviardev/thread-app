@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Options from './components/Options'
+import Thread from './components/Thread'
 import UserInfo from './components/UserInfo'
 
 import { ThemeProvider } from './context/ThemeContext'
@@ -12,6 +13,7 @@ export default function App () {
           <Header />
           <UserInfo />
           <Options />
+          <Thread />
         </main>
       </ThemeProvider>
     </>
