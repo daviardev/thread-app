@@ -3,6 +3,7 @@ const Instagram = props => (
     width={24}
     height={24}
     aria-label='Instagram'
+    fill='currentColor'
     className='relative block'
     viewBox='0 0 24 24'
     {...props}
