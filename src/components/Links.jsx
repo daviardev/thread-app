@@ -32,12 +32,11 @@ export default function Likes () {
         </div>
         <div className='flex items-center ml-4 flex-grow-0'>
           <a>
-            <button className='restart-positions'>
+            <button className='icon-container restart-positions'>
               <Instagram />
             </button>
           </a>
-          <div className='ml-4' />
-          <button className='cursor-pointer' onCLick={handleOpen}>
+          <button className='icon-container cursor-pointer' onCLick={handleOpen}>
             <div className='restart-positions'>
               <Dots />
             </div>
