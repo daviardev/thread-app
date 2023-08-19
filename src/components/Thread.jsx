@@ -3,7 +3,7 @@ import More from './Icons/More'
 export default function Thread () {
   return (
     <>
-      <div className='flex gap-[.75rem] mb-4 pb-[1.25rem] pt-[1.25rem]'>
+      <div className='flex gap-[.75rem] mb-4 pb-[1.25rem] pt-[1.25rem] border-t-[var(--border-card)] border-t'>
         <div className='flex flex-col items-center'>
           <figure className='rounded-full inline-flex justify-center relative shrink-0 w-12 h-12'>
             <img
