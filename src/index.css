@@ -71,10 +71,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 button:active,
 .logo:active {
     transform: scale(.95);
@@ -171,5 +167,9 @@ img {
 
     .logo:hover {
         transform: scale(1.07);
+    }
+
+    .text {
+        @apply h-12 text-center name-subtitle;
     }
 }
