@@ -1,14 +1,14 @@
 import More from './Icons/More'
 
-export default function Thread () {
+export default function Thread ({ user, filterThread }) {
   return (
     <>
       <div className='flex gap-[.75rem] mb-4 pb-[1.25rem] pt-[1.25rem] border-t-[var(--border-card)] border-t'>
         <div className='flex flex-col items-center'>
           <figure className='rounded-full inline-flex justify-center relative shrink-0 w-12 h-12'>
             <img
-              src='https://yt3.ggpht.com/09AlR_MLxWgWp4842t535WEhtT_SQ7TstD1TeKDUO3m979R05vEQ_YGBrHO-eKDC3xJJj4cX=s88-c-k-c0x00ffffff-no-rj'
-              alt='Jerson David Silva Arjona'
+              src={user.avatar}
+              alt={user.name}
               className='rounded-full'
             />
           </figure>
@@ -17,24 +17,28 @@ export default function Thread () {
           <div className='flex justify-between w-full'>
             <div className='flex w-full items-center'>
               <span className='text-[.875rem] font-bold'>
-                daviardev
+                {user.username}
               </span>
             </div>
             <div className='flex gap-4 items-center'>
               <time className='text-[var(--secondary-text-color)]'>
-                2sem
+                {new Date(filterThread.createdAt).toLocaleDateString('es-CO', {
+                  day: 'numeric'
+                })}
               </time>
               <More />
             </div>
           </div>
-          <p>Hola Threads (daviardev)</p>
-          <div className='mt-2'>
-            <img
-              src='https://threads-clone-yt.vercel.app/post1.png'
-              alt='mark zukaverga'
-              className='border border-[var(--border-card)] mt-0 mb-0 relative rounded-lg'
-            />
-          </div>
+          <p>{filterThread.text}</p>
+          {filterThread?.image && (
+            <div className='mt-2'>
+              <img
+                src={filterThread?.image}
+                alt='mark zukaverga'
+                className='border border-[var(--border-card)] mt-0 mb-0 relative rounded-lg'
+              />
+            </div>
+          )}
           <div className='flex gap-[.75rem] mt-[.25rem] mb-[.25rem]'>
             <div className='flex gap-[.75rem] mt-[.5rem] mb-[.5rem]'>
               <svg aria-label='Like' color='' fill='transparent' height='19' role='img' viewBox='0 0 24 22' width='20'>
@@ -58,13 +62,18 @@ export default function Thread () {
           </div>
           <div class='flex gap-[.5rem] items-center'>
             <span class='hover:underline cursor-pointer text-[var(--secondary-text-color)] text-[.875rem]'>
-              481 replies
+              {
+              filterThread.repply_to > 1
+                ? `${filterThread.repply_to + ' replies'}`
+                : `${filterThread.repply_to + ' reply'
+            }`
+}
             </span>
             <span className='inline-block restart-positions name-subtitle'>
               ·
             </span>
             <span class='hover:underline cursor-pointer text-[var(--secondary-text-color)] text-[.875rem]'>
-              1200 Me gusta
+              {filterThread.likes.length + ' likes'}
             </span>
           </div>
         </div>
