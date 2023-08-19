@@ -1,11 +1,11 @@
-export default function Options () {
+export default function Options ({ viewThreadFeed, setViewThreadFeed }) {
   return (
     <>
       <div className='grid w-full items-center' style={{ gridTemplateColumns: 'repeat(2,1fr)' }}>
-        <a href='#' className='h-12 text-center name-subtitle current'>
+        <a className={viewThreadFeed ? 'text current' : 'text-[var(--secondary-text-color)] text'} onClick={() => setViewThreadFeed(true)}>
           Hilos
         </a>
-        <a href='#' className='text-center h-12 name-subtitle'>
+        <a className={!viewThreadFeed ? 'text current' : 'text-[var(--secondary-text-color)] text'} onClick={() => setViewThreadFeed(false)}>
           Respuestas
         </a>
       </div>
