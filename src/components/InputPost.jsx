@@ -1,4 +1,4 @@
-export default function InputPost () {
+export default function InputPost ({ user }) {
   return (
     <>
       <div
@@ -16,7 +16,8 @@ export default function InputPost () {
             <div className='flex items-center'>
               <div className='flex items-center'>
                 <img
-                  src='https://yt3.ggpht.com/09AlR_MLxWgWp4842t535WEhtT_SQ7TstD1TeKDUO3m979R05vEQ_YGBrHO-eKDC3xJJj4cX=s88-c-k-c0x00ffffff-no-rj'
+                  src={user.avatar}
+                  alt={`Foto del perfil ${user.username}`}
                   className='rounded-full h-[35px]'
                 />
               </div>

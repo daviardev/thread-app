@@ -4,7 +4,7 @@ import Dots from './Icons/Dots'
 import Modal from './Modal'
 import Instagram from './Icons/Instagram'
 
-export default function Likes () {
+export default function Likes ({ user }) {
   const [isOpen, setIsOpen] = useState()
 
   const handleOpen = () => {
@@ -18,7 +18,7 @@ export default function Likes () {
     <>
       <section className='mt-[18px] min-h-[22px] flex items-center' onClick={handleClose}>
         <a className='flex items-center flex-shrink-0 restart-positions name-subtitle'>
-          241 seguidores
+          {user.followers.length} seguidores
         </a>
         <div className='min-w-0 flex-grow flex items-center'>
           <span className='pr-1.5 inline-block pl-1.5 restart-positions name-subtitle'>
@@ -26,7 +26,7 @@ export default function Likes () {
           </span>
           <a className='min-w-0 restart-positions name-subtitle' href='https://www.udemy.com/course/python-django-2021-complete-course/'>
             <span className='w-full block overflow-hidden text-ellipsis whitespace-nowrap'>
-              udemy.com/course/python-django-2021-complete-course/
+              {user.github_url}
             </span>
           </a>
         </div>
@@ -41,7 +41,7 @@ export default function Likes () {
               <Dots />
             </div>
           </button>
-          <Modal isOpen={isOpen}>
+          <Modal user={user} isOpen={isOpen}>
             Copiar enlace
           </Modal>
         </div>

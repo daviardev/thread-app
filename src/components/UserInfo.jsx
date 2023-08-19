@@ -1,19 +1,18 @@
-import Bio from './Bio'
 import Links from './Links'
 
-export default function UserInfo () {
+export default function UserInfo ({ user }) {
   return (
     <>
       <nav className='pt-4 pb-4'>
         <section className='container-info flex justify-between items-center'>
           <div className='col-[1]'>
             <h2 className='name-title' style={{ lineHeight: 'calc(1.30 * 1em)' }}>
-              Jerson David Silva Arjona
+              {user.name}
             </h2>
             <div className='mt-0.5'>
               <div className='flex items-center'>
                 <span className='name-subtitle' style={{ lineHeight: 'calc(1.4 * 1em)' }}>
-                  daviardev
+                  {user.username}
                 </span>
                 <div className='ml-1'>
                   <span className='content-trhead'>
@@ -29,16 +28,20 @@ export default function UserInfo () {
                 <img
                   height='100%'
                   width='100%'
-                  alt='Foto del perfil de daviardev'
+                  alt={`Foto del perfil de ${user.username}`}
                   className='rounded-full object-cover'
-                  src='https://yt3.ggpht.com/09AlR_MLxWgWp4842t535WEhtT_SQ7TstD1TeKDUO3m979R05vEQ_YGBrHO-eKDC3xJJj4cX=s88-c-k-c0x00ffffff-no-rj'
+                  src={user.avatar}
                 />
               </figure>
             </div>
           </div>
         </section>
-        <Bio />
-        <Links />
+        <section className='mt-4'>
+          <p classname='name-subtitle'>
+            {user.bio}
+          </p>
+        </section>
+        <Links user={user} />
       </nav>
     </>
   )
