@@ -12,10 +12,10 @@ export default function App () {
       <ThemeProvider>
         <main className='w-screen screen mr-auto flex-col flex grow ml-auto md:pl-3 md:pr-3 md:max-w-[620px]'>
           <Header />
+          <InputPost />
           <UserInfo />
           <Options />
           <Thread />
-          <InputPost />
         </main>
       </ThemeProvider>
     </>
